@@ -1,0 +1,14 @@
+<mvc:View
+   controllerName="sap.ui.demo.wt.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Text text="Hello World from App.view[4]"/>
+   <Button
+   text="{i18n>showHelloButtonText}"
+   press="onShowHello"/>
+   <Input
+      value="{/recipient/name}"
+      description="Hello {/recipient/name} from other element value[7]"
+      valueLiveUpdate="true"
+      width="60%"/>
+</mvc:View>
