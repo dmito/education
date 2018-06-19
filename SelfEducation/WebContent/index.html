@@ -31,8 +31,11 @@
 //             }).placeAt("content_view");
 //          });
          sap.ui.getCore().attachInit(function () {
-             new sap.ui.core.ComponentContainer({
-            	 name : "selfed.example"
+             new sap.m.Shell({
+                 app : new sap.ui.core.ComponentContainer({
+                     name : "selfed.example",
+                     height : "100%"
+                  })
              }).placeAt("content_component");
 //           name : "sap.ui.demo.wt"
           });

@@ -1,8 +1,9 @@
 sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
-   "sap/ui/model/resource/ResourceModel"
-], function (UIComponent, JSONModel, ResourceModel) {
+   "sap/ui/model/resource/ResourceModel",
+   "./controller/HelloDialog"
+], function (UIComponent, JSONModel, ResourceModel, HelloDialog) {
    "use strict";
    return UIComponent.extend("selfed.example.Component", {
       metadata : {
@@ -14,7 +15,7 @@ sap.ui.define([
          // set data model
          var oData = {
             recipient : {
-               name : "World"
+               name : "World!"
             }
          };
          var oModel = new JSONModel(oData);
@@ -25,6 +26,8 @@ sap.ui.define([
             bundleName : "selfed.example.i18n.i18n"
          });
          this.setModel(i18nModel, "i18n");
+         // set dialog
+			this.helloDialog = new HelloDialog();
       }
    });
 });

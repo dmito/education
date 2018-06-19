@@ -1,0 +1,13 @@
+.mySelfEDApp .myCustomButton.sapMBtn {
+  margin-right: 0.125rem;
+}
+
+html[dir="rtl"] .mySelfEDApp .myCustomButton.sapMBtn {
+  margin-left: 0.125rem;
+  margin-right: 0;
+}
+.mySelfEDApp .myCustomText {
+  font-weight: bold;
+  font-size: 12px;
+  color: blue;
+}
