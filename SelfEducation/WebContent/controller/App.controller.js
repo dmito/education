@@ -5,8 +5,9 @@ sap.ui.define([
 	"sap/ui/model/resource/ResourceModel"
 ], function (Controller, MessageToast, JSONModel, ResourceModel) {
    "use strict";
-   return Controller.extend("sap.ui.demo.wt.controller.App", {
-	   onInit : function () {
+   return Controller.extend("selfed.example.controller.App", {
+	/* Move to component.js
+	    onInit : function () {
 	         // set data model on view
 	         var oData = {
 	            recipient : {
@@ -20,7 +21,8 @@ sap.ui.define([
 	            bundleName: "sap.ui.demo.wt.i18n.i18n"
 	         });
 	         this.getView().setModel(i18nModel, "i18n");	         
-	      }, 
+	      },
+*/ 
       onShowHello : function () {
     	  
          // show a native JavaScript alert
