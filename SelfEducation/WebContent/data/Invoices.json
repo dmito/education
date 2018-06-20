@@ -11,7 +11,7 @@
 	{
 	  "ProductName": "Milk",
 	  "Quantity": 4,
-	  "ExtendedPrice": 9.99999,
+	  "ExtendedPrice": 58.99999,
 	  "ShipperName": "ACME",
 	  "ShippedDate": "2015-02-18T00:00:00",
 	  "Status": "B"
